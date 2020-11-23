@@ -1,0 +1,8 @@
+
+
+
+POST     /register                  controllers.LoginController.registerUser(request: Request)
+
+
+POST     /login             controllers.LoginController.loginUser(request: Request)
+
