@@ -3,15 +3,23 @@
 
 # --- !Ups
 
-create table person (
+create table student (
   id                            bigint auto_increment not null,
-  name                          varchar(255),
+  studentname                   varchar(255),
+  constraint pk_student primary key (id)
+);
+
+create table user (
+  id                            bigint auto_increment not null,
+  username                      varchar(255),
   password                      varchar(255),
-  constraint pk_person primary key (id)
+  constraint pk_user primary key (id)
 );
 
 
 # --- !Downs
 
-drop table if exists person;
+drop table if exists student;
+
+drop table if exists user;
 
